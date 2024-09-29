@@ -1,0 +1,169 @@
+.kanban-container {
+    margin-top: 1%;
+  }
+
+.kanban-board{
+  background-color: #f4f7fb; 
+  padding: 1%;             
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-around;
+  gap: 16px;
+  min-height: 100vh;
+}
+  
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+  }
+  
+  .group-column {
+    flex: 1;
+  padding: 1%;
+  border-radius: 8px;
+  }
+  
+  .group-header {
+    display: flex;
+    margin: 4%;
+    justify-content: space-between;
+  }
+  
+  .group-status-icon {
+    width: 4%;
+    height: 4%;
+    margin-right: 4%;
+  }
+
+  .group-priority-icon {
+    width: 7%;
+    height: 7%;
+    margin-right: 4%;
+  }
+  
+  .group-header-title {
+    text-align: left;
+    display: flex; 
+    flex-direction: row; 
+    align-items: flex-start;
+    margin-right: auto; 
+  }
+  
+  .group-title {
+    font-size: medium;
+    font-weight: 600;
+    text-align: left;
+    width: 90%;
+  }
+  
+  .group-count {
+    font-size: medium;
+    color: #555;
+    text-align: left;
+    width: 10%;
+
+  }
+  
+  .group-actions {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .action-icon {
+    width: 90%;
+    height: 90%;
+    cursor: pointer;
+  }
+
+/* Filter container */
+.filter-bg-color{
+  background-color: #ffff;
+}
+.filter-container {
+  position: relative; 
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  padding-bottom: 1rem;
+  margin-left: 2%;
+}
+
+/* Display button (trigger) */
+.filter-display {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ddd;
+  font-weight: 600;
+}
+
+/* Icon inside the display button */
+.filter-icon {
+  width: 1em; 
+  height: 1em; 
+  margin-right: 0.5rem;
+}
+
+/* Title inside the display button */
+.filter-title {
+  font-size: medium;
+}
+
+/* Dropdown container */
+.filter-dropdown {
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  z-index: 1;
+  min-width: 200%; 
+  box-sizing: border-box; 
+}
+
+/* Flexbox for aligning labels and dropdowns side by side */
+.filter-group, .filter-ordering {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+/* Labels for dropdown items */
+.filter-group label, .filter-ordering label {
+  font-size: small;
+  font-weight: bold;
+  margin-right: 3rem; 
+  flex: 0 0 30%; 
+}
+
+/* Dropdown select input */
+.filter-group select, .filter-ordering select {
+  flex: 1; 
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: small;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* Last dropdown item should have no margin-bottom */
+.filter-ordering {
+  margin-bottom: 0;
+}
+
+/* Adjust dropdowns for better alignment */
+.filter-group select, .filter-ordering select {
+  margin-left: 0.5rem; 
+}
